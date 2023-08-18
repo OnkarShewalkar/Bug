@@ -1,6 +1,8 @@
-// @flow
+int minval(int *A, int n) {
+  int currmin;
 
-import test from 'ava';
-
-// eslint-disable-next-line ava/no-todo-test
-test.todo('write tests');
+  for (int i=0; i<n; i++)
+    if (A[i] < currmin)
+      currmin = A[i];
+  return currmin;
+}
